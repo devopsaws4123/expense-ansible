@@ -21,9 +21,12 @@
     - PyMysql
     - cryptography
 
-  - name: set root password
+  - name: mysql connection check
     community.mysql.mysql_info:
       login_user: root
       login_password: ExpenseApp@1
       login_host: mysql.devopsaws.fun
       ignore_errors: true
+
+    - name: set root password
+      ansible.builtin.command: mysql_secure_installation --set-root-pass ExpenseApp@1
