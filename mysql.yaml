@@ -26,3 +26,4 @@
       login_user: root
       login_password: ExpenseApp@1
       login_host: mysql.devopsaws.fun
+      ignore_errors: true
