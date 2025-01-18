@@ -12,3 +12,7 @@
     ansible.builtin.dnf:
       name: nodejs
       state: installed
+
+  - name: useradd
+    ansible.builtin.user:
+      name: expense
