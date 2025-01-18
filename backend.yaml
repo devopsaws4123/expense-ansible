@@ -44,10 +44,14 @@
 
   - name: install mysql
     ansible.builtin.dnf:
+      name: mysql
+      state: installed
+  
+  - name: install pymysql and crypto
+    ansible.buultin.pip:
       name: "{{ item }}"
       state: installed
     loop:
-    - mysql 
     - PyMySQL
 
   - name: import mysql data
