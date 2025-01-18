@@ -18,6 +18,7 @@
       name: "{{ item }}"
       executable: pip3.3
     loop:
+    - pip3.3
     - python3
     - python3-pip
 
