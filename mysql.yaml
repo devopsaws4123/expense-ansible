@@ -28,5 +28,5 @@
       login_host: mysql.devopsaws.fun
       ignore_errors: true
 
-    - name: set root password
-      ansible.builtin.command: mysql_secure_installation --set-root-pass ExpenseApp@1
+  - name: set root password
+    ansible.builtin.command: mysql_secure_installation --set-root-pass ExpenseApp@1
