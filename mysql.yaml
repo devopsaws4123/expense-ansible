@@ -19,6 +19,7 @@
       executable: pip3.9
     loop:
     - PyMysql
+    - cryptography
 
   - name: set root password
     community.mysql.mysql_info:
