@@ -50,7 +50,7 @@
   - name: install pymysql and crypto
     ansible.builtin.pip:
       name: "{{ item }}"
-      state: installed
+      state: latest
     loop:
     - PyMySQL
 
