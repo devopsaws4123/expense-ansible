@@ -48,7 +48,7 @@
       state: installed
   
   - name: install pymysql and crypto
-    ansible.buultin.pip:
+    ansible.builtin.pip:
       name: "{{ item }}"
       state: installed
     loop:
