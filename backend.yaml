@@ -50,9 +50,10 @@
   - name: install pymysql and crypto
     ansible.builtin.pip:
       name: "{{ item }}"
-      state: latest
+      executable: pip3.9
     loop:
     - PyMySQL
+    - cryptography
 
   - name: import mysql data
     community.mysql.mysql_db:
